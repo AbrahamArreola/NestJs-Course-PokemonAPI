@@ -17,3 +17,7 @@ npm i -g @nestjs/cli
 ```
 docker-compose up -d
 ```
+5. Populate database making an http request to the following seed route
+```
+http://localhost:3001/api/v2/seed
+```
