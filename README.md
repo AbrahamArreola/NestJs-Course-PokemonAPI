@@ -17,7 +17,13 @@ npm i -g @nestjs/cli
 ```
 docker-compose up -d
 ```
-5. Populate database making an http request to the following seed route
+5. Clone the ```.env.template``` and rename it to ```.env```
+6. Fill the environment variables with the required data
+7. Run the application in development mode:
+```
+npm run start:dev
+```
+8. Populate database making an http request to the following seed route
 ```
 http://localhost:3001/api/v2/seed
 ```
