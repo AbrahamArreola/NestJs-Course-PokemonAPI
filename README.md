@@ -27,3 +27,11 @@ npm run start:dev
 ```
 http://localhost:3001/api/v2/seed
 ```
+
+## Generate Production Build
+1. Create `.env.prod` file
+2. Fill the environment variables with the proper production credentials/data
+3. Create the application image running the following command:
+```
+docker-compose -f docker-compose.prod.yaml --env-file .env.prod up --build
+```
